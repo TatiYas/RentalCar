@@ -1,0 +1,23 @@
+{
+  "name": "rentalcar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.3",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.21",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "tailwindcss": "^4.2.1",
+    "zustand": "^5.0.11"
+  }
+}
