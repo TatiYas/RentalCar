@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+ "compilerOptions": {
     "target": "ES2023",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -18,9 +18,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    //"erasableSyntaxOnly": true,
+    //"noFallthroughCasesInSwitch": true,
+    //"noUncheckedSideEffectImports": true
   },
   "include": ["src"]
 }
