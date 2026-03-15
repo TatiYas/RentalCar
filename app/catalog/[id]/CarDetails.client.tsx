@@ -2,10 +2,10 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
-import { fetchCarById } from "@/lib/api/clientApi";
+import { fetchCarById } from "../../../lib/api/clientApi";
 import css from "./CarDetails.module.css";
 import Image from "next/image";
-import CarForm from "@/components/CarForm/CarForm";
+import CarForm from "../../../components/CarForm/CarForm";
 
 const spritePath = "/sprite.svg";
 
