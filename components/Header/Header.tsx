@@ -8,7 +8,7 @@ export default function Header() {
             <Link href="/" aria-label="Home">
                 <Image
                     className={css.logo}
-                    src="/Logo.svg"
+                    src="/public/Logo.svg"
                     alt="RentalCar logo"
                     width={104}
                     height={16}

@@ -3,7 +3,7 @@
 import css from "./CarList.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { useFavoriteStore } from "@/lib/store/favorites";
+import { useFavoriteStore } from "../../lib/store/favorites";
 import { useState } from "react";
 
 const spritePath = "/sprite.svg";

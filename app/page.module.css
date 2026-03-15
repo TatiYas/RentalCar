@@ -1,6 +1,6 @@
 .background {
     background-image: 
-        url(/images/background/car1x.jpg);
+        url(/public/car1x.jpg);
       
     background-repeat: no-repeat;
     background-position: center;
@@ -14,7 +14,7 @@
 @media (min-resolution: 2x) {
     .background {
         background-image:
-            url(/images/background/car1x.jpg);
+            url(/public/car1x.jpg);
     }
 }
 
