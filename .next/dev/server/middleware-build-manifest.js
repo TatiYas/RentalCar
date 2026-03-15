@@ -1,0 +1,51 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": [
+      "static/chunks/6f1e8_next_dist_compiled_bb309213._.js",
+      "static/chunks/6f1e8_next_dist_shared_lib_b9206281._.js",
+      "static/chunks/6f1e8_next_dist_client_332d469e._.js",
+      "static/chunks/6f1e8_next_dist_ad87be44._.js",
+      "static/chunks/6f1e8_next_app_fda18920.js",
+      "static/chunks/[next]_entry_page-loader_ts_3c3dff2c._.js",
+      "static/chunks/6f1e8_react-dom_ac95f39d._.js",
+      "static/chunks/6f1e8_dca31a30._.js",
+      "static/chunks/[root-of-the-server]__bab6e868._.js",
+      "static/chunks/Desktop_Projects_RentalCar_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Desktop_Projects_RentalCar_pages__app_f7807014._.js"
+    ],
+    "/_error": [
+      "static/chunks/6f1e8_next_dist_compiled_bb309213._.js",
+      "static/chunks/6f1e8_next_dist_shared_lib_ac1a54cf._.js",
+      "static/chunks/6f1e8_next_dist_client_332d469e._.js",
+      "static/chunks/6f1e8_next_dist_5531abb8._.js",
+      "static/chunks/6f1e8_next_error_506b77d5.js",
+      "static/chunks/[next]_entry_page-loader_ts_8bbd20e4._.js",
+      "static/chunks/6f1e8_react-dom_ac95f39d._.js",
+      "static/chunks/6f1e8_dca31a30._.js",
+      "static/chunks/[root-of-the-server]__e68ec4be._.js",
+      "static/chunks/Desktop_Projects_RentalCar_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Desktop_Projects_RentalCar_pages__error_e6fda214._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/6f1e8_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_dd8133a4._.js",
+    "static/chunks/6f1e8_next_dist_compiled_react-dom_5f928a60._.js",
+    "static/chunks/6f1e8_next_dist_compiled_react-server-dom-turbopack_6ddc55bd._.js",
+    "static/chunks/6f1e8_next_dist_compiled_next-devtools_index_b106cdd0.js",
+    "static/chunks/6f1e8_next_dist_compiled_d50b49cd._.js",
+    "static/chunks/6f1e8_next_dist_client_58df5f66._.js",
+    "static/chunks/6f1e8_next_dist_74c864cc._.js",
+    "static/chunks/6f1e8_@swc_helpers_cjs_e9b37df1._.js",
+    "static/chunks/Desktop_Projects_RentalCar_a0ff3932._.js",
+    "static/chunks/turbopack-Desktop_Projects_RentalCar_61231258._.js"
+  ]
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js"
+];
