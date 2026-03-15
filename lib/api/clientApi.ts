@@ -1,6 +1,6 @@
-import { Car } from "@/types/Car";
+import { Car } from "../../types/Car";
 import { nextServer } from "./api";
-import { Filters } from "@/types/Filters";
+import { Filters } from "../../types/Filters";
 
 
 export async function fetchCarById(id: string): Promise<Car>{
