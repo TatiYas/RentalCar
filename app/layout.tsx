@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/Header/Header";
 import TanStackProvider from "../components/TanStackProvider/TanStackProvider";
-import { Manrope } from 'next/font/google';
+import { Manrope } from "next/font/google";
 
 const manrope = Manrope({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  display: 'swap',
-variable: '--font-manrope',
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-manrope",
 });
-
 
 export const metadata: Metadata = {
   title: "Car Rent App | Your Personal Car in your app",
@@ -18,21 +17,21 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Car Rent App | Your Personal Car in your app",
     description: "find a car of your dream by filter",
-    url: "https://rental-car-olive-nu.vercel.app/",//
-  }
+    url: "https://rental-car-olive-nu.vercel.app/",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={manrope.variable}>
+      <body suppressHydrationWarning className={manrope.variable}>
         <TanStackProvider>
-            <Header />
-            {children}
+          <Header />
+          {children}
         </TanStackProvider>
       </body>
     </html>
