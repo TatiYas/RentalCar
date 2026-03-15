@@ -1,6 +1,6 @@
 var R=require("./chunks/[turbopack]_runtime.js")("postcss.js")
-R.c("chunks/[turbopack-node]_transforms_postcss_ts_b3509069._.js")
-R.c("chunks/[root-of-the-server]__33a96fef._.js")
+R.c("chunks/[turbopack-node]_transforms_postcss_ts_56c52a53._.js")
+R.c("chunks/[root-of-the-server]__f6fa287a._.js")
 R.m("[turbopack-node]/globals.ts [postcss] (ecmascript)")
-R.m("[turbopack-node]/ipc/evaluate.ts/evaluate.js { INNER => \"[turbopack-node]/transforms/postcss.ts { CONFIG => \\\"[project]/Desktop/Projects/RentalCar/postcss.config.js_.loader.mjs [postcss] (ecmascript)\\\" } [postcss] (ecmascript)\", RUNTIME => \"[turbopack-node]/ipc/evaluate.ts [postcss] (ecmascript)\" } [postcss] (ecmascript)")
-module.exports=R.m("[turbopack-node]/ipc/evaluate.ts/evaluate.js { INNER => \"[turbopack-node]/transforms/postcss.ts { CONFIG => \\\"[project]/Desktop/Projects/RentalCar/postcss.config.js_.loader.mjs [postcss] (ecmascript)\\\" } [postcss] (ecmascript)\", RUNTIME => \"[turbopack-node]/ipc/evaluate.ts [postcss] (ecmascript)\" } [postcss] (ecmascript)").exports
+R.m("[turbopack-node]/ipc/evaluate.ts/evaluate.js { INNER => \"[turbopack-node]/transforms/postcss.ts { CONFIG => \\\"[project]/Desktop/Projects/RentalCar/postcss.config.cjs [postcss] (ecmascript)\\\" } [postcss] (ecmascript)\", RUNTIME => \"[turbopack-node]/ipc/evaluate.ts [postcss] (ecmascript)\" } [postcss] (ecmascript)")
+module.exports=R.m("[turbopack-node]/ipc/evaluate.ts/evaluate.js { INNER => \"[turbopack-node]/transforms/postcss.ts { CONFIG => \\\"[project]/Desktop/Projects/RentalCar/postcss.config.cjs [postcss] (ecmascript)\\\" } [postcss] (ecmascript)\", RUNTIME => \"[turbopack-node]/ipc/evaluate.ts [postcss] (ecmascript)\" } [postcss] (ecmascript)").exports
