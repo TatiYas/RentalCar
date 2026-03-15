@@ -1,0 +1,3 @@
+module.exports=[76377,a=>{a.v({className:"manrope_55a38ad4-module__XtbIwG__className",variable:"manrope_55a38ad4-module__XtbIwG__variable"})},89891,a=>{"use strict";var b=a.i(76377);let c={className:b.default.className,style:{fontFamily:"'Manrope', 'Manrope Fallback'",fontStyle:"normal"}};null!=b.default.variable&&(c.variable=b.default.variable),a.s(["metadata",0,{title:"Car Rent App | Your Personal Car in your app",description:"find a car of your dream by filter",openGraph:{title:"Car Rent App | Your Personal Car in your app",description:"find a car of your dream by filter"}}],89891)}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__596fdd9e._.js.map

@@ -1,0 +1,3 @@
+module.exports=[40952,a=>{"use strict";var b=a.i(77520);function c(){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)("h1",{children:"404 — Page not found"}),(0,b.jsx)("p",{children:"Sorry, the page you are looking for does not exist 🤷‍♂️"})]})}a.s(["default",()=>c,"metadata",0,{title:"Not found",description:"There is no page on this url",openGraph:{title:"Not found",description:"There is no page on this url",url:"?"}}])}];
+
+//# sourceMappingURL=Desktop_Projects_RentalCar_app_not-found_tsx_e3fc7907._.js.map

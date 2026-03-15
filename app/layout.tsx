@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-//import Header from "....;
-//import TanStackProvider from "......TanStackProvider";
+import Header from "../components/Header/Header";
+import TanStackProvider from "../components/TanStackProvider/TanStackProvider";
 import { Manrope } from 'next/font/google';
 
 const manrope = Manrope({
@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Car Rent App | Your Personal Car in your app",
     description: "find a car of your dream by filter",
-   // url: "rentalcar.vercel.app/",// пізніше додати
+   url: "rental-car-olive-nu.vercel.app",
   }
 };
 
-/*export default function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -37,4 +37,4 @@ export const metadata: Metadata = {
       </body>
     </html>
   );
-}*/
+}
