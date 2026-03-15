@@ -21,14 +21,15 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/Desktop/Projects/Rent
 
 __turbopack_context__.n(__turbopack_context__.i("[project]/Desktop/Projects/RentalCar/app/not-found.tsx [app-rsc] (ecmascript)"));
 }),
-"[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
-const e = new Error("Could not parse module '[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx', file not found");
-e.code = 'MODULE_UNPARSABLE';
-throw e;
+__turbopack_context__.s([]);
 }),
 "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
 
 __turbopack_context__.n(__turbopack_context__.i("[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx [app-rsc] (ecmascript)"));
 }),
 ];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__8893fd66._.js.map
