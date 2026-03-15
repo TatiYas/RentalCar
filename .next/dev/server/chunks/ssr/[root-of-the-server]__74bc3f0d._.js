@@ -191,7 +191,7 @@ const metadata = {
     openGraph: {
         title: "Car Rent App | Your Personal Car in your app",
         description: "find a car of your dream by filter",
-        url: "rental-car-olive-nu.vercel.app"
+        url: "https://rental-car-olive-nu.vercel.app/"
     }
 };
 function RootLayout({ children }) {
