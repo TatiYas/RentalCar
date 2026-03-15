@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Select from "../Select/Select";
-import css from "./FilterBar.module.css";
+import css from "./FiltersBar.module.css";
 import { fetchBrands } from "@/lib/api/clientApi";
 
 
