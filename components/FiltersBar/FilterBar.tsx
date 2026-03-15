@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Select from "../Select/Select";
 import css from "./FiltersBar.module.css";
-import { fetchBrands } from "@/lib/api/clientApi";
+import { fetchBrands } from "../../lib/api/clientApi";
 
 
 type Filters = {
