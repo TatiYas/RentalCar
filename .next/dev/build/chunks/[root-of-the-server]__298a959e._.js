@@ -166,11 +166,7 @@ module.exports = mod;
 module.exports = {
     plugins: [
         __turbopack_context__.r("[project]/Desktop/Projects/RentalCar/node_modules/@tailwindcss/postcss/dist/index.js [postcss] (ecmascript)"),
-        (()=>{
-            const e = new Error("Cannot find module 'autoprefixer'");
-            e.code = 'MODULE_NOT_FOUND';
-            throw e;
-        })()
+        __turbopack_context__.r("[project]/Desktop/Projects/RentalCar/node_modules/autoprefixer/lib/autoprefixer.js [postcss] (ecmascript)")
     ]
 };
 }),

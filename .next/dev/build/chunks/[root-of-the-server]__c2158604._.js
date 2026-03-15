@@ -20,14 +20,10 @@ module.exports = mod;
 "[project]/Desktop/Projects/RentalCar/postcss.config.cjs [postcss] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
 module.exports = {
-    plugins: [
-        __turbopack_context__.r("[project]/Desktop/Projects/RentalCar/node_modules/@tailwindcss/postcss/dist/index.js [postcss] (ecmascript)"),
-        (()=>{
-            const e = new Error("Cannot find module 'autoprefixer'");
-            e.code = 'MODULE_NOT_FOUND';
-            throw e;
-        })()
-    ]
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {}
+    }
 };
 }),
 "[turbopack-node]/transforms/transforms.ts [postcss] (ecmascript)", ((__turbopack_context__) => {
