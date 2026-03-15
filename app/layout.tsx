@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../components/Header/Header";
-import TanStackProvider from "../components/TanStackProvider/TanStackProvider";
+import Header from "@/components/Header/Header";
+import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
 import { Manrope } from 'next/font/google';
 
 const manrope = Manrope({
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Car Rent App | Your Personal Car in your app",
     description: "find a car of your dream by filter",
-   url: "rental-car-olive-nu.vercel.app",
+    url: "rental-car-olive-nu.vercel.app",//
   }
 };
 
