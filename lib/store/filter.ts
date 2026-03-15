@@ -1,4 +1,4 @@
-import { Filters } from "@/types/Filters";
+import { Filters } from "../../types/Filters";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
