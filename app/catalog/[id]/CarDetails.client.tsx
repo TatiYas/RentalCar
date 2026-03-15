@@ -7,7 +7,7 @@ import css from "./CarDetails.module.css";
 import Image from "next/image";
 import CarForm from "../../../components/CarForm/CarForm";
 
-const spritePath = "/sprite.svg";
+const spritePath = "/public/sprite.svg";
 
 type Car = {
   id: string;
