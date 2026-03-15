@@ -1,16 +1,6 @@
 {
-  "app": {
-    "[project]/Desktop/Projects/RentalCar/app/_not-found/page": [
-      "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
-    ],
-    "[project]/Desktop/Projects/RentalCar/app/catalog/page": [
-      "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
-    ],
-    "[project]/Desktop/Projects/RentalCar/app/page": [
-      "static/media/a343f882a40d2cc9-s.p.71e1367e.woff2"
-    ]
-  },
-  "appUsingSizeAdjust": true,
+  "app": {},
+  "appUsingSizeAdjust": false,
   "pages": {},
   "pagesUsingSizeAdjust": false
 }
