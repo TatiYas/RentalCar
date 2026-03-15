@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/fluvius_pro/Desktop/Projects/RentalCar/app/loading.tsx"],"sourcesContent":["import React from \"react\";\n\nconst Loading = () => {\n    return <p>Loading, please wait...</p>;\n}\n\nexport default Loading;"],"names":[],"mappings":";;;;;;AAEA,MAAM,UAAU;IACZ,qBAAO,kRAAC;kBAAE;;;;;;AACd;uCAEe"}},
-    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///Users/fluvius_pro/Desktop/Projects/RentalCar/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,uJACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}
