@@ -1,0 +1,269 @@
+/* [project]/Desktop/Projects/RentalCar/app/globals.css [app-client] (css) */
+@layer properties {
+  @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+    *, :before, :after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+    }
+  }
+}
+
+.transform {
+  transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+}
+
+.filter {
+  filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+}
+
+body {
+  font-family: var(--font-manrope), sans-serif;
+  color: #101828;
+  background-color: #f8f9fa;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+div .react-datepicker {
+  background-color: #fff;
+  border: 1px solid #3470ff;
+  border-radius: 8px;
+  padding: 1px;
+  font-family: sans-serif;
+}
+
+div .react-datepicker__header {
+  background-color: #fff;
+  border-bottom: none;
+  padding: 8px 0;
+}
+
+div .react-datepicker__navigation {
+  line-height: 1;
+  top: 10px;
+}
+
+div .react-datepicker__day-names {
+  border-bottom: 1px solid #3470ff;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+div .react-datepicker__day-name {
+  color: #999;
+}
+
+div .react-datepicker__day {
+  color: #333;
+  border-radius: 50%;
+  width: 36px;
+  height: 32px;
+  margin: 0;
+  line-height: 32px;
+  transition: background-color .2s;
+}
+
+div .react-datepicker__day:hover {
+  background-color: #e6f0ff;
+}
+
+div .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range, div .react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+  color: #fff !important;
+  background-color: #3470ff !important;
+  border-radius: 50% !important;
+}
+
+div .react-datepicker__day--outside-month {
+  color: #ccc;
+}
+
+div .react-datepicker__navigation-icon:before, .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow {
+  content: "";
+  border: 2px solid #3470ff;
+  border-width: 2px 2px 0 0;
+  width: 9px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  top: -3px;
+}
+
+.react-datepicker__day-name {
+  font-size: 0;
+  position: relative;
+}
+
+.react-datepicker__day-name:first-child:after {
+  content: "Mon";
+  color: #999;
+  font-size: 12px;
+}
+
+.react-datepicker__day-name:nth-child(2):after {
+  content: "Tue";
+  color: #999;
+  font-size: 12px;
+}
+
+.react-datepicker__day-name:nth-child(3):after {
+  content: "Wed";
+  color: #999;
+  font-size: 12px;
+}
+
+.react-datepicker__day-name:nth-child(4):after {
+  content: "Thu";
+  color: #999;
+  font-size: 12px;
+}
+
+.react-datepicker__day-name:nth-child(5):after {
+  content: "Fri";
+  color: #999;
+  font-size: 12px;
+}
+
+.react-datepicker__day-name:nth-child(6):after {
+  content: "Sat";
+  color: #999;
+  font-size: 12px;
+}
+
+.react-datepicker__day-name:nth-child(7):after {
+  content: "Sun";
+  color: #999;
+  font-size: 12px;
+}
+
+div .react-datepicker__triangle:before, div .react-datepicker__triangle:after {
+  border-bottom-color: #fff !important;
+}
+
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-blur {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-invert {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false
+}
+
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false
+}
+
+/*# sourceMappingURL=Desktop_Projects_RentalCar_app_globals_css_bad6b30c._.single.css.map*/

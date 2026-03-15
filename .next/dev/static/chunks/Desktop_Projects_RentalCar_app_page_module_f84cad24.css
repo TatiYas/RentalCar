@@ -1,0 +1,60 @@
+/* [project]/Desktop/Projects/RentalCar/app/page.module.css [app-client] (css) */
+.page-module__f_dRgq__background {
+  background-image: url(".....");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 436px;
+  padding-bottom: 60px;
+}
+
+@media (min-resolution: 2x) {
+  .page-module__f_dRgq__banner {
+    background-image: url(".......");
+  }
+}
+
+.page-module__f_dRgq__title {
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  margin-bottom: 16px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.page-module__f_dRgq__subtitile {
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.page-module__f_dRgq__link {
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #3470ff;
+  border-radius: 12px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 12px 88px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  display: block;
+}
+
+.page-module__f_dRgq__link:hover, .page-module__f_dRgq__link:focus {
+  background-color: #0b44cd;
+}
+
+/*# sourceMappingURL=Desktop_Projects_RentalCar_app_page_module_f84cad24.css.map*/
