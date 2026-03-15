@@ -4114,35 +4114,22 @@ class Router {
                     return new Promise(()=>{});
                 }
                 const routerFilterSValue = ("TURBOPACK compile-time value", {
-                    "numItems": ("TURBOPACK compile-time value", 3),
+                    "numItems": ("TURBOPACK compile-time value", 1),
                     "errorRate": ("TURBOPACK compile-time value", 0.0001),
-                    "numBits": ("TURBOPACK compile-time value", 58),
+                    "numBits": ("TURBOPACK compile-time value", 20),
                     "numHashes": ("TURBOPACK compile-time value", 14),
                     "bitArray": ("TURBOPACK compile-time value", [
                         ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 0),
@@ -4151,64 +4138,18 @@ class Router {
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0)
+                        ("TURBOPACK compile-time value", 1)
                     ])
                 });
                 if (!staticFilterData && routerFilterSValue) {
                     staticFilterData = ("TURBOPACK compile-time truthy", 1) ? routerFilterSValue : "TURBOPACK unreachable";
                 }
                 const routerFilterDValue = ("TURBOPACK compile-time value", {
-                    "numItems": ("TURBOPACK compile-time value", 1),
+                    "numItems": ("TURBOPACK compile-time value", 0),
                     "errorRate": ("TURBOPACK compile-time value", 0.0001),
-                    "numBits": ("TURBOPACK compile-time value", 20),
-                    "numHashes": ("TURBOPACK compile-time value", 14),
-                    "bitArray": ("TURBOPACK compile-time value", [
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1)
-                    ])
+                    "numBits": ("TURBOPACK compile-time value", 0),
+                    "numHashes": ("TURBOPACK compile-time value", null),
+                    "bitArray": ("TURBOPACK compile-time value", [])
                 });
                 if (!dynamicFilterData && routerFilterDValue) {
                     dynamicFilterData = ("TURBOPACK compile-time truthy", 1) ? routerFilterDValue : "TURBOPACK unreachable";
