@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import FilterBar from "../../components/FiltersBar/FilterBar";
 import CarList from "../../components/CarList/CarList";
 import css from "./CatalogPage.module.css";
-import { Car } from "@/types/Car";
-import { fetchCars } from "@/lib/api/clientApi";
-import { useFilterDraftStore } from "@/lib/store/filter";
+import { Car } from "../../types/Car";
+import { fetchCars } from "../../lib/api/clientApi";
+import { useFilterDraftStore } from "../../lib/store/filter";
 import { Filters } from "@/types/Filters";
+
 
 
 export default function CatalogPage() {
