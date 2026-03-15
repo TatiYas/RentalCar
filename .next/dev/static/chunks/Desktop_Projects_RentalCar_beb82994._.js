@@ -673,26 +673,29 @@ __turbopack_context__.v({
 "use strict";
 
 __turbopack_context__.s([
-    "useFilterStore",
-    ()=>useFilterStore
+    "useFilterDraftStore",
+    ()=>useFilterDraftStore
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Projects/RentalCar/node_modules/zustand/esm/react.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Projects/RentalCar/node_modules/zustand/esm/middleware.mjs [app-client] (ecmascript)");
 ;
 ;
-const initialFilters = {
+const initialData = {
     brand: "",
     rentalPrice: "",
     minMileage: "",
     maxMileage: ""
 };
-const useFilterStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])()((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["persist"])((set)=>({
-        filters: initialFilters,
-        setFilters: (newFilters)=>set({
-                filters: newFilters
-            })
+const useFilterDraftStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])()((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["persist"])((set)=>({
+        draft: initialData,
+        setDraft: (filter)=>set(()=>({
+                    draft: filter
+                }))
     }), {
-    name: "filters-store"
+    name: 'filters-draft',
+    partialize: (state)=>({
+            draft: state.draft
+        })
 }));
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -723,100 +726,68 @@ var _s = __turbopack_context__.k.signature();
 ;
 function CatalogPage() {
     _s();
+    const [filters, setFilters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        brand: "",
+        rentalPrice: "",
+        minMileage: "",
+        maxMileage: ""
+    });
+    const { draft, setDraft } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$store$2f$filter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFilterDraftStore"])();
+    console.log(draft);
     const [cars, setCars] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [isLoadingMore, setIsLoadingMore] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [page, setPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1);
     const [hasMore, setHasMore] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
-    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const filters = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$store$2f$filter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFilterStore"])({
-        "CatalogPage.useFilterStore[filters]": (state)=>state.filters
-    }["CatalogPage.useFilterStore[filters]"]);
-    const setFilters = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$store$2f$filter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFilterStore"])({
-        "CatalogPage.useFilterStore[setFilters]": (state)=>state.setFilters
-    }["CatalogPage.useFilterStore[setFilters]"]);
-    const getFilteredParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "CatalogPage.useCallback[getFilteredParams]": (currentFilters)=>{
-            return Object.fromEntries(Object.entries(currentFilters).filter({
-                "CatalogPage.useCallback[getFilteredParams]": ([_, value])=>value !== ""
-            }["CatalogPage.useCallback[getFilteredParams]"]));
+    const handleSearch = async (newFilters)=>{
+        setDraft(newFilters);
+        setFilters(newFilters);
+        setPage(1);
+        const filteredParams = Object.fromEntries(Object.entries(newFilters).filter(([_, value])=>value !== ""));
+        setIsLoading(true);
+        const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$api$2f$clientApi$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetchCars"])(filteredParams, 1);
+        setCars(data.cars);
+        setHasMore(data.totalPages > 1);
+        setIsLoading(false);
+    };
+    const handleLoadMore = async ()=>{
+        const nextPage = page + 1;
+        const filteredParams = Object.fromEntries(Object.entries(filters).filter(([_, value])=>value !== ""));
+        setIsLoading(true);
+        const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$api$2f$clientApi$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetchCars"])(filteredParams, nextPage);
+        setCars((prev)=>[
+                ...prev,
+                ...data.cars
+            ]);
+        setPage(nextPage);
+        setHasMore(nextPage < data.totalPages);
+        setIsLoading(false);
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "CatalogPage.useEffect": ()=>{
+            setFilters(draft);
         }
-    }["CatalogPage.useCallback[getFilteredParams]"], []);
-    const fetchCarsData = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "CatalogPage.useCallback[fetchCarsData]": async (params, currentPage, append = false)=>{
-            try {
-                setError(null);
-                const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$api$2f$clientApi$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetchCars"])(params, currentPage);
-                if (append) {
-                    setCars({
-                        "CatalogPage.useCallback[fetchCarsData]": (prev)=>[
-                                ...prev,
-                                ...data.cars
-                            ]
-                    }["CatalogPage.useCallback[fetchCarsData]"]);
-                } else {
-                    setCars(data.cars);
-                }
-                setPage(currentPage);
-                setHasMore(currentPage < data.totalPages);
-                return data;
-            } catch (err) {
-                setError("Error loading.Please try again.");
-                throw err;
-            }
-        }
-    }["CatalogPage.useCallback[fetchCarsData]"], []);
-    const handleSearch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "CatalogPage.useCallback[handleSearch]": (newFilters)=>{
-            setFilters(newFilters);
-            setPage(1);
-            setHasMore(true);
-        }
-    }["CatalogPage.useCallback[handleSearch]"], [
-        setFilters
-    ]);
-    const handleLoadMore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "CatalogPage.useCallback[handleLoadMore]": async ()=>{
-            if (isLoading || !hasMore) return;
-            setIsLoadingMore(true);
-            const params = getFilteredParams(filters);
-            await fetchCarsData(params, page + 1, true);
-            setIsLoadingMore(false);
-        }
-    }["CatalogPage.useCallback[handleLoadMore]"], [
-        isLoading,
-        hasMore,
-        filters,
-        getFilteredParams,
-        page,
-        fetchCarsData
+    }["CatalogPage.useEffect"], [
+        draft
     ]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "CatalogPage.useEffect": ()=>{
-            const loadCars = {
-                "CatalogPage.useEffect.loadCars": async ()=>{
-                    if (isLoading) return;
-                    const hasFilters = Object.values(filters).some({
-                        "CatalogPage.useEffect.loadCars.hasFilters": (v)=>v !== ""
-                    }["CatalogPage.useEffect.loadCars.hasFilters"]);
-                    if (!hasFilters) {
-                        setCars([]);
-                        setHasMore(false);
-                        return;
-                    }
+            const fetchInitial = {
+                "CatalogPage.useEffect.fetchInitial": async ()=>{
                     setIsLoading(true);
-                    const params = getFilteredParams(filters);
-                    await fetchCarsData(params, 1, false);
+                    const filteredParams = Object.fromEntries(Object.entries(filters).filter({
+                        "CatalogPage.useEffect.fetchInitial.filteredParams": ([_, v])=>v !== ""
+                    }["CatalogPage.useEffect.fetchInitial.filteredParams"]));
+                    const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$api$2f$clientApi$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetchCars"])(filteredParams, 1);
+                    setCars(data.cars);
+                    setPage(1);
+                    setHasMore(data.totalPages > 1);
                     setIsLoading(false);
                 }
-            }["CatalogPage.useEffect.loadCars"];
-            loadCars();
+            }["CatalogPage.useEffect.fetchInitial"];
+            fetchInitial();
         }
     }["CatalogPage.useEffect"], [
-        filters,
-        getFilteredParams,
-        fetchCarsData,
-        isLoading
+        filters
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -827,61 +798,48 @@ function CatalogPage() {
                     onSearch: handleSearch
                 }, void 0, false, {
                     fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
-                    lineNumber: 89,
-                    columnNumber: 2
+                    lineNumber: 85,
+                    columnNumber: 7
                 }, this),
-                error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$app$2f$catalog$2f$CatalogPage$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].error,
-                    children: error
-                }, void 0, false, {
-                    fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
-                    lineNumber: 91,
-                    columnNumber: 12
-                }, this),
-                isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$app$2f$catalog$2f$CatalogPage$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].loading,
-                    children: "Загрузка..."
+                    children: "Loading..."
                 }, void 0, false, {
                     fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
-                    lineNumber: 94,
-                    columnNumber: 2
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$CarList$2f$CarList$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            cars: cars
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
-                            lineNumber: 97,
-                            columnNumber: 2
-                        }, this),
-                        hasMore && cars.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: handleLoadMore,
-                            disabled: isLoadingMore,
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$app$2f$catalog$2f$CatalogPage$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].buttonLoad,
-                            children: isLoadingMore ? "Loading..." : "Load more?"
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
-                            lineNumber: 99,
-                            columnNumber: 2
-                        }, this)
-                    ]
-                }, void 0, true)
+                    lineNumber: 86,
+                    columnNumber: 21
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$CarList$2f$CarList$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    cars: cars
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
+                    lineNumber: 87,
+                    columnNumber: 7
+                }, this),
+                hasMore && cars.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: handleLoadMore,
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$app$2f$catalog$2f$CatalogPage$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].buttonLoad,
+                    children: "Load more"
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
+                    lineNumber: 90,
+                    columnNumber: 9
+                }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
-            lineNumber: 88,
-            columnNumber: 2
+            lineNumber: 83,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Desktop/Projects/RentalCar/app/catalog/page.tsx",
-        lineNumber: 87,
-        columnNumber: 2
+        lineNumber: 82,
+        columnNumber: 5
     }, this);
 }
-_s(CatalogPage, "WYfTNVsIwT41JHz4i4CAjx7qAbA=", false, function() {
+_s(CatalogPage, "l1ADB1v00C6/XGauNKUNqjC4KuU=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$store$2f$filter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFilterStore"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$store$2f$filter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFilterStore"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$lib$2f$store$2f$filter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFilterDraftStore"]
     ];
 });
 _c = CatalogPage;
