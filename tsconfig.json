@@ -36,7 +36,7 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     "components/CarList/CarList.tsx",
-    "app/catalog/[id]/page.jsx"
+    "app/catalog/[id]/page.tsx"
   ],
   "exclude": [
     "node_modules"
