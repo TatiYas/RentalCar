@@ -1,11 +1,12 @@
-// import Image from "next/image";
-//import css from "./page.module.css";
+
+import React from "react";
+import css from "./page.module.css";
 
 import Link from "next/link";
 
-/*export default function Home() {
+export default function Home() {
   return (
-   /* <main>
+    <main>
       <section className={css.background}>
         <h1 className={css.title}>Find your perfect rental car</h1>
         <h2 className={css.subtitile}>Reliable and budget-friendly rentals for any journey</h2>
@@ -14,4 +15,4 @@ import Link from "next/link";
 
     </main>
   );
-}*/
+}
