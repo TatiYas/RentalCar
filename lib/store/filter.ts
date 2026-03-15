@@ -1,15 +1,11 @@
-import { Filters } from "../../types/Filters";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { Filters } from "@/types/Filters"; 
 
-type FiltersStore = {
+interface FilterStore {
   filters: Filters;
-  setFilters: (filter: Filters) => void;
-  updateFilters: (partial: Partial<Filters>) => void;
-  resetFilters: () => void;
-  clearBrand: () => void;
-  clearMileage: () => void;
-};
+  setFilters: (filters: Filters) => void;
+}
 
 const initialFilters: Filters = {
   brand: "",
@@ -18,36 +14,15 @@ const initialFilters: Filters = {
   maxMileage: "",
 };
 
-export const useFilterStore = create<FiltersStore>()(
+export const useFilterStore = create<FilterStore>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       filters: initialFilters,
-      
-      setFilters: (filter) => set({ filters: filter }),
-      
-      updateFilters: (partial) => {
-        set({ filters: { ...get().filters, ...partial } });
-      },
-      
-      resetFilters: () => set({ filters: initialFilters }),
-      
-      clearBrand: () => {
-        set({ filters: { ...get().filters, brand: "" } });
-      },
-      
-      clearMileage: () => {
-        set({ 
-          filters: { 
-            ...get().filters, 
-            minMileage: "", 
-            maxMileage: "" 
-          } 
-        });
-      },
+      setFilters: (newFilters) => set({ filters: newFilters }),
     }),
     {
       name: "filters-store",
-      partialize: (state) => ({ filters: state.filters }),
     }
   )
 );
+
