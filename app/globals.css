@@ -129,56 +129,56 @@ div .react-datepicker__navigation-icon:before,
   top: -3px;
 }
 
-/* Прибираємо стандартний текст */
+
 .react-datepicker__day-name {
   font-size: 0;
-  /* сховати текст */
+
   position: relative;
 }
 
-/* Понеділок */
+
 .react-datepicker__day-name:nth-child(1)::after {
   content: "Mon";
   font-size: 12px;
   color: #999;
 }
 
-/* Вівторок */
+
 .react-datepicker__day-name:nth-child(2)::after {
   content: "Tue";
   font-size: 12px;
   color: #999;
 }
 
-/* Середа */
+
 .react-datepicker__day-name:nth-child(3)::after {
   content: "Wed";
   font-size: 12px;
   color: #999;
 }
 
-/* Четвер */
+
 .react-datepicker__day-name:nth-child(4)::after {
   content: "Thu";
   font-size: 12px;
   color: #999;
 }
 
-/* Пʼятниця */
+
 .react-datepicker__day-name:nth-child(5)::after {
   content: "Fri";
   font-size: 12px;
   color: #999;
 }
 
-/* Субота */
+
 .react-datepicker__day-name:nth-child(6)::after {
   content: "Sat";
   font-size: 12px;
   color: #999;
 }
 
-/* Неділя */
+
 .react-datepicker__day-name:nth-child(7)::after {
   content: "Sun";
   font-size: 12px;
@@ -187,10 +187,10 @@ div .react-datepicker__navigation-icon:before,
 
 div .react-datepicker__triangle::before {
   border-bottom-color: #fff !important;
-  /* колір верхнього шару */
+
 }
 
 div .react-datepicker__triangle::after {
   border-bottom-color: #ffffff !important;
-  /* колір нижнього шару */
+ 
 }

@@ -25,7 +25,7 @@ function Select({ options, value: externalValue, placeholder = "Select...", onCh
     const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [internalValue, setInternalValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(externalValue || "");
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const selectedValue = externalValue !== undefined ? externalValue : internalValue;
+    const value = externalValue !== undefined ? externalValue : internalValue;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const handler = (e)=>{
             if (ref.current && !ref.current.contains(e.target)) {
@@ -42,20 +42,18 @@ function Select({ options, value: externalValue, placeholder = "Select...", onCh
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: ref,
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("relative", __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].selectContainer),
+        className: "relative",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 type: "button",
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].filterList,
                 onClick: ()=>setOpen((prev)=>!prev),
-                "aria-expanded": open,
-                "aria-haspopup": "listbox",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        children: selectedValue || placeholder
+                        children: value || placeholder
                     }, void 0, false, {
                         fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                        lineNumber: 53,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -66,58 +64,47 @@ function Select({ options, value: externalValue, placeholder = "Select...", onCh
                             href: `${spritePath}#icon-up`
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                            lineNumber: 62,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                        lineNumber: 54,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                lineNumber: 46,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
-            open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].dropdown,
-                role: "listbox",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].dropdown} ${open ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].open : ""}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].dropdownList,
-                    role: "list",
                     children: options.map((opt)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                type: "button",
-                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].dropdownItem, opt === selectedValue && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].selected),
-                                onClick: ()=>handleSelect(opt),
-                                role: "option",
-                                "aria-selected": opt === selectedValue,
-                                children: opt
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                                lineNumber: 71,
-                                columnNumber: 17
-                            }, this)
+                            onClick: ()=>handleSelect(opt),
+                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].dropdownItem} ${opt === value ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Projects$2f$RentalCar$2f$components$2f$Select$2f$Select$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].selected : ""}`,
+                            children: opt
                         }, opt, false, {
                             fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                            lineNumber: 70,
-                            columnNumber: 15
+                            lineNumber: 68,
+                            columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                    lineNumber: 68,
-                    columnNumber: 11
+                    lineNumber: 66,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-                lineNumber: 67,
-                columnNumber: 9
+                lineNumber: 65,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/Projects/RentalCar/components/Select/Select.tsx",
-        lineNumber: 45,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 }

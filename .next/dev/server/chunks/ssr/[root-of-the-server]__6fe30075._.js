@@ -25,7 +25,6 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/Desktop/Projects/Rent
 
 __turbopack_context__.v({
   "background": "page-module__f_dRgq__background",
-  "banner": "page-module__f_dRgq__banner",
   "link": "page-module__f_dRgq__link",
   "subtitile": "page-module__f_dRgq__subtitile",
   "title": "page-module__f_dRgq__title",

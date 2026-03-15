@@ -1,6 +1,6 @@
-import { Car } from "@/types/Car";
+import { Car } from "../../types/Car";
 import { nextServer } from "./api";
-import { Filters } from "@/types/Filters";
+import { Filters } from "../../types/Filters";
 
 
 export async function fetchCarById(id: string): Promise<Car>{
@@ -13,8 +13,8 @@ export async function fetchBrands(): Promise<string[]>{
     return res.data;
 }
 
-export async function fetchCars(filters: Filters, page = 1, limit = 12) {
-  const params = new URLSearchParams({ ...filters, page: page.toString(), limit: limit.toString() });
-  const res = await nextServer.get(`/cars?${params.toString()}`);
-  return res.data;
+export async function fetchCars(filters: Filters, page = 1, limit = 12){
+    const params = new URLSearchParams({ ...filters, page: page.toString(),limit:limit.toString() });
+    const res = await nextServer.get(`/cars?${params.toString()}`);
+    return res.data;
 };
