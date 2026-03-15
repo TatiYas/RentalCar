@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/fluvius_pro/Desktop/Projects/RentalCar/app/error.tsx"],"sourcesContent":["'use client';\n\nimport React from \"react\";\n\ntype Props = {\n  error: Error;\n};\n\nconst Error = ({ error }: Props) => {\n  return (\n    <p>Something gone wrong... {error.message}</p>\n  );\n}\n\nexport default Error;"],"names":[],"mappings":";;;;;AAAA;;AAQA,MAAM,QAAQ,CAAC,EAAE,KAAK,EAAS;IAC7B,qBACE,kRAAC;;YAAE;YAAyB,MAAM,OAAO;;;;;;;AAE7C;uCAEe"}}]
+}

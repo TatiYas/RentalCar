@@ -1,0 +1,22 @@
+/* [project]/Desktop/Projects/RentalCar/app/catalog/CatalogPage.module.css [app-client] (css) */
+.CatalogPage-module__nApFDG__buttonLoad {
+  letter-spacing: 0;
+  border: 1px solid #3470ff;
+  border-radius: 12px;
+  margin: 80px auto 0;
+  padding: 12px 38px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  display: block;
+}
+
+.CatalogPage-module__nApFDG__buttonLoad:hover, .CatalogPage-module__nApFDG__buttonLoad:focus {
+  border: 1px solid #0b44cd;
+}
+
+.CatalogPage-module__nApFDG__section {
+  margin-bottom: 124px;
+}
+
+/*# sourceMappingURL=Desktop_Projects_RentalCar_app_catalog_CatalogPage_module_css_bad6b30c._.single.css.map*/

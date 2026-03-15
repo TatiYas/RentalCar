@@ -1,0 +1,30 @@
+/* [project]/Desktop/Projects/RentalCar/components/Header/Header.module.css [app-client] (css) */
+.Header-module__ke-gmq__header {
+  color: #101828;
+  background-color: #f2f4f7;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 120px;
+  display: flex;
+}
+
+.Header-module__ke-gmq__navigation {
+  gap: 32px;
+  list-style-type: none;
+  display: flex;
+}
+
+.Header-module__ke-gmq__navigation li a {
+  letter-spacing: 0;
+  text-align: center;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.Header-module__ke-gmq__navigation li a:focus, .Header-module__ke-gmq__navigation li a:hover {
+  color: #0b44cd;
+}
+
+/*# sourceMappingURL=Desktop_Projects_RentalCar_components_Header_Header_module_css_bad6b30c._.single.css.map*/

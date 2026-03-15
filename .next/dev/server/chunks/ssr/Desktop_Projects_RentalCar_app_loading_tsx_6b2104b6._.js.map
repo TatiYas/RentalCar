@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/fluvius_pro/Desktop/Projects/RentalCar/app/loading.tsx"],"sourcesContent":["import React from \"react\";\n\nconst Loading = () => {\n    return <p>Loading, please wait...</p>;\n}\n\nexport default Loading;"],"names":[],"mappings":";;;;;;AAEA,MAAM,UAAU;IACZ,qBAAO,kRAAC;kBAAE;;;;;;AACd;uCAEe"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Desktop/Projects/RentalCar/components/Header/Header.module.css"],"sourcesContent":[".header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 120px;\n    background-color: #F2F4F7;\n    color: #101828;\n}\n\n.navigation {\n    display: flex;\n    gap: 32px;\n    list-style-type: none;\n}\n\n.navigation li a{\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 20px;\n    letter-spacing: 0;\n    text-align: center;\n    color: #101828;\n}\n\n.navigation li a:focus,\n.navigation li a:hover {\n    color: #0B44CD;\n}"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;;AAMA;;;;;;;;;AASA"}}]
+}
